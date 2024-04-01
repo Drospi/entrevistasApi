@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\CitasController;
+use App\Http\Controllers\DiasController;
 use App\Http\Controllers\RolesController;
 use App\Http\Controllers\UsuariosController;
 use Illuminate\Http\Request;
@@ -40,3 +41,5 @@ Route::get('/roles/{id}',[RolesController::class, 'show']);
 Route::post('/roles',[RolesController::class, 'store']);
 Route::put('/roles/{id}',[RolesController::class, 'update']);
 Route::delete('/roles/{id}',[RolesController::class, 'destroy']);
+
+Route::get('/dias',[DiasController::class, 'create']);
